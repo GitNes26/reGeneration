@@ -722,6 +722,15 @@ p {
    90% { opacity: .90; transform: scale(1);}
    100% { opacity: 0; display: none;}
 }
+#intro_logo {
+   animation: fade_out_intro_logo 3s ease-out;
+}
+@keyframes fade_out_intro_logo {
+   0% { opacity: 1; }
+   90% { opacity: 1; }
+   100% { opacity: 0; display: none;}
+}
+
 
 #intro_3 {
    opacity: 1;
@@ -751,13 +760,23 @@ p {
 
 #img_hero_2 {width: 18.5rem;}
 
-#hero > img {
+/* #hero > img {
    position: absolute;
    z-index: 10;
    left: 0;
    right: 0;
    top: 0;
    bottom: 0;
+   margin: auto;
+   transform: translate(5%, 0%);
+} */
+#hero > img {
+   /* position: absolute;
+   z-index: 10;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0; */
    margin: auto;
    transform: translate(5%, 0%);
 }
@@ -768,6 +787,13 @@ p {
    from { transform: rotate(0deg)  translate(-0rem) rotate(0deg); }
    to { transform: rotate(1170deg) translate(-15rem) rotate(-3690deg); }
 }
+.img_left_right {
+   animation: left_right 2.5s cubic-bezier(0.77,-0.16, 0.5, 1.25) forwards;
+}
+@keyframes left_right {
+   from { transform: translateX(-50rem) rotate(0deg); }
+   to { transform: translate(0rem) rotate(360deg); }
+}
 @media screen and (max-width: 768px){
    @keyframes rotate_right {
       from { transform: rotate(0deg)  translate(-0rem) rotate(0deg); }
@@ -776,6 +802,13 @@ p {
 }
 .img_rotate_left {
    animation: rotate_left 2.5s ease-in-out forwards;
+}
+.img_right_left {
+   animation: right_left 2.5s cubic-bezier(0.77,-0.16, 0.5, 1.25) forwards;
+}
+@keyframes right_left {
+   from { transform: translateX(50rem) rotate(0deg); }
+   to { transform: translate(0rem) rotate(-360deg); }
 }
 @keyframes rotate_left {
    from { transform: rotate(0deg)  translate(-0rem) rotate(0deg); }
@@ -798,7 +831,7 @@ p {
    top: 5%;
    opacity: .6;
    transition: all 0.6s ease-in-out;
-   z-index: 90;
+   z-index: 999;
    background-color: transparent;
 }
 #span_icon:hover {
