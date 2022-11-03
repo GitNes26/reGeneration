@@ -18,10 +18,25 @@ const animation_3 = () => {
 }
 
 
+
+
+//#region EFECTO PARALLAX
+window.onscroll = function () {
+   let position = window.pageYOffset || document.documentElement.scrollTop;
+   let img_hamburger_1 = document.getElementById("img_hamburger_1");
+   let section_hamburgers = document.getElementById("section_hamburgers");
+   // console.log(section_hamburgers.style);
+   // img_hamburger_1.style.bottom = `${position * 0.01}px` ;
+}
+//#endregion EFECTO PARALLAX
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
    document.querySelector("body").classList.add("scroll-y-none");
-   document.querySelector("#img_hero_1").classList.remove("img_rotate_right");
-   // document.querySelector("#img_hero_2").classList.remove("img_rotate_left");
+   document.querySelector("#img_hero_1").classList.remove("img_left_right");
+   document.querySelector("#img_hero_2").classList.remove("img_right_left");
 
    const animations = () => {
       setTimeout(() => animation_1(), timeTimeOut);

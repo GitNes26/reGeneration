@@ -21,8 +21,9 @@
       href="https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link href="plugins/aos/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plugins/fullPage.js-msater/fullpage.min.css">
+
     <title>ReGereation</title>
   </head>
   <body class="scroll-y-none">
@@ -43,15 +44,15 @@
 
     <span class="d-none" id="span_icon">
       <a href="#">
-        <img src="assets/icon-logo.png" alt="logo floating" class="">
+        <img src="assets/crown_logo.png" alt="logo floating" class="" />
       </a>
     </span>
 
-    <div class="container-full d-flex justify-content-center text-center">
+    <div class="container-full d-flex justify-content-center text-center bg-blue">
       <section class="h-100 p-0" id="section_hero">
         <div class="h-100 w-100 bg-dark hero" id="intro_logo">
           <img
-            src="assets/icon-logo.png"
+            src="assets/crown_logo_white.png"
             class="img-sm"
             alt="logo RE"
             id="logo_intro"
@@ -71,15 +72,12 @@
           />
         </div> -->
 
-        <div
-          class="p-relative d-flex py-1"
-          id="hero"
-        >
+        <div class="p-relative d-flex py-1" id="hero">
           <img
-          src="assets/main-logo.png"
-          alt="main-logo-royal"
-          class="img-hero"
-          id="img_hero_1"
+            src="assets/main-logo.png"
+            alt="main-logo-royal"
+            class="img-hero"
+            id="img_hero_1"
           />
           <img src="assets/arroba-clara.png" alt="arroba" class="img-sm" />
           <img
@@ -288,74 +286,43 @@
         data-aos-anchor-placement="center-bottom"
       />
 
-      <section class="py-1" id="section_bun">
-        <div class="d-flex align-items-center">
+      <!-- <section class="py-1 section_parallax" id="carrusel">
+        <div
+          class="d-flex align-items-center element_parallax"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="center-bottom"
+        >
           <img
+            id="img_hamburger_1"
             src="assets/Hamburger-1.png"
             alt="img hamburger-1"
-            class="img-5"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
+            class="img-5 img_parallax"
           />
-          <div
-            class="title"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            BUN:
-          </div>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
+          <div class="title">BUN:</div>
+          <p data-aos="fade-up">
             It starts with a high-quality milk bun made from Washington wheat.
             Wheat is an ideal cover crop as it keeps microbes active near the
             roots creating healthy soil that can absorb and store more carbon
             and keep soil maintained throughout winter.
           </p>
         </div>
-      </section>
 
-      <hr
-        class="separator-sm"
-        data-aos="slide-down"
-        data-aos-duration="5200"
-        data-aos-easing="ease-in-out-back"
-        data-aos-anchor-placement="center-bottom"
-      />
-
-      <section class="py-1" id="section_produce">
-        <div class="d-flex align-items-center">
+        <div
+          class="d-flex align-items-center element_parallax"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="center-bottom"
+        >
           <img
             src="assets/Hamburger-2.png"
             alt="img hamburger-2"
             class="img-5"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
           />
-          <div
-            class="title"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
-            PRODUCE:
-          </div>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-            data-aos-anchor-placement="center-bottom"
-          >
+          <div class="title">PRODUCE:</div>
+          <p>
             Burgers topped with local produce have a lower carbon footprint and
             are tastier.<br />
             Soil is vital for healthy crop growth and rotational farming,
@@ -364,18 +331,231 @@
             Royal grows dozens of different crops for more diversity.
           </p>
         </div>
-      </section>
 
-      <hr
+        <div
+          class="d-flex align-items-center element_parallax"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="assets/Hamburger-3.png"
+            alt="img hamburger-3"
+            class="img-5"
+          />
+          <div class="title">DAIRY:</div>
+          <p>
+            Don’t forget the cheese! Cows are the ultimate recyclers. They take
+            leftover food waste that would end up in a landfill and convert it
+            into milk. Milk from Royal Dairy heads to Darigold where it’s
+            crafted into the melty cheese you love.
+          </p>
+        </div>
+
+        <div
+          class="d-flex align-items-center element_parallax"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="assets/Hamburger-4.png"
+            alt="img hamburger-4"
+            class="img-5"
+          />
+          <div class="title">BEEF:</div>
+          <p>
+            Fresh, juicy, local beef. Cows create a closed-loop system on farms;
+            planted seeds in the soil turn into grassy fields, which cows eat
+            and upcycle providing high-quality protein as beef. Manure feeds the
+            seeds and give nutrients back into the soil and restarts the cycle.
+          </p>
+        </div>
+
+        <div
+          class="d-flex align-items-center element_parallax"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="assets/Hamburger-5.png"
+            alt="img hamburger-5"
+            class="img-5"
+          />
+          <div class="title">
+            CARBON NEUTRAL<br />
+            NEVER TASTED SO GOOD!
+          </div>
+          <p>
+            By eating a Molly D's Burger from Royal Ranch, you are helping the
+            planet! So do your part, eat at Molly D's.
+          </p>
+        </div>
+        <div
+          class="d-flex h-100 align-items-center element_parallax"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <img
+            src="assets/Hamburger-6.png"
+            alt="img hamburger-6"
+            class="img-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out-back"
+            data-aos-anchor-placement="center-bottom"
+          />
+        </div>
+      </section> -->
+
+      <!-- <section class="py-1 " id="snap_container">
+        <div
+          class="d-flex align-items-center snap-section"
+          
+        >
+          <img
+            id="img_hamburger_1"
+            src="assets/Hamburger-1.png"
+            alt="img hamburger-1"
+            class="img-5 img_parallax"
+          />
+          <div class="title">BUN:</div>
+          <p>
+            It starts with a high-quality milk bun made from Washington wheat.
+            Wheat is an ideal cover crop as it keeps microbes active near the
+            roots creating healthy soil that can absorb and store more carbon
+            and keep soil maintained throughout winter.
+          </p>
+        </div>
+
+        <div
+          class="d-flex align-items-center snap-section"
+          
+        >
+          <img
+            src="assets/Hamburger-2.png"
+            alt="img hamburger-2"
+            class="img-5"
+          />
+          <div class="title">PRODUCE:</div>
+          <p>
+            Burgers topped with local produce have a lower carbon footprint and
+            are tastier.<br />
+            Soil is vital for healthy crop growth and rotational farming,
+            planting different crops on the same plot over the course of a few
+            seasons, is an ideal way improve soil health and balance nutrients.
+            Royal grows dozens of different crops for more diversity.
+          </p>
+        </div>
+
+        <div
+          class="d-flex align-items-center snap-section"
+          
+        >
+          <img
+            src="assets/Hamburger-3.png"
+            alt="img hamburger-3"
+            class="img-5"
+          />
+          <div class="title">DAIRY:</div>
+          <p>
+            Don’t forget the cheese! Cows are the ultimate recyclers. They take
+            leftover food waste that would end up in a landfill and convert it
+            into milk. Milk from Royal Dairy heads to Darigold where it’s
+            crafted into the melty cheese you love.
+          </p>
+        </div>
+
+        <div
+          class="d-flex align-items-center snap-section"
+          
+        >
+          <img
+            src="assets/Hamburger-4.png"
+            alt="img hamburger-4"
+            class="img-5"
+          />
+          <div class="title">BEEF:</div>
+          <p>
+            Fresh, juicy, local beef. Cows create a closed-loop system on farms;
+            planted seeds in the soil turn into grassy fields, which cows eat
+            and upcycle providing high-quality protein as beef. Manure feeds the
+            seeds and give nutrients back into the soil and restarts the cycle.
+          </p>
+        </div>
+
+        <div
+          class="d-flex align-items-center snap-section"
+          
+        >
+          <img
+            src="assets/Hamburger-5.png"
+            alt="img hamburger-5"
+            class="img-5"
+          />
+          <div class="title">
+            CARBON NEUTRAL<br />
+            NEVER TASTED SO GOOD!
+          </div>
+          <p>
+            By eating a Molly D's Burger from Royal Ranch, you are helping the
+            planet! So do your part, eat at Molly D's.
+          </p>
+        </div>
+
+        <div
+          class="d-flex align-items-center snap-section"
+          
+        >
+          <img
+            src="assets/Hamburger-6.png"
+            alt="img hamburger-6"
+            class="img-5"
+          />
+        </div>
+      </section> -->
+
+      <!-- <div class="snap-container">
+        <div class="snap-section">section1</div>
+        <div class="snap-section">section2</div>
+        <div class="snap-section">section3</div>
+        <div class="snap-section">section4</div>
+      </div> -->
+
+
+
+      <!-- <hr
         class="separator-sm"
         data-aos="slide-down"
         data-aos-duration="5200"
         data-aos-easing="ease-in-out-back"
         data-aos-anchor-placement="center-bottom"
-      />
+      /> -->
+      <!-- <section class="snap-section snap-container" id="section_hamburgers"> -->
+        <section class="py-1 h-100 bg_parallax snap-section bg-dark" id="section_paralax_1"></section>
+        <section class="py-1 h-100 bg_parallax snap-section" id="section_paralax_2"></section>
+        <section class="py-1 h-100 bg_parallax snap-section bg-dark" id="section_paralax_3"></section>
+        <section class="py-1 h-100 bg_parallax snap-section" id="section_paralax_4"></section>
+        <section class="py-1 h-100 bg_parallax snap-section bg-dark" id="section_paralax_5"></section>
+        <section class="py-1 h-100 bg_parallax snap-section" id="section_paralax_6"></section>
+      <!-- </section> -->
 
-      <section class="py-1" id="section_dairy">
-        <div class="d-flex align-items-center">
+      <!-- <hr
+        class="separator-sm"
+        data-aos="slide-down"
+        data-aos-duration="5200"
+        data-aos-easing="ease-in-out-back"
+        data-aos-anchor-placement="center-bottom"
+      /> -->
+
+      <!-- <section class="py-1 h-100 section_parallax" id="section_dairy">
+        <div class="d-flex align-items-center element_parallax">
           <img
             src="assets/Hamburger-3.png"
             alt="img hamburger-3"
@@ -406,18 +586,18 @@
             crafted into the melty cheese you love.
           </p>
         </div>
-      </section>
+      </section> -->
 
-      <hr
+      <!-- <hr
         class="separator-sm"
         data-aos="slide-down"
         data-aos-duration="5200"
         data-aos-easing="ease-in-out-back"
         data-aos-anchor-placement="center-bottom"
-      />
+      /> -->
 
-      <section class="py-1" id="section_beef">
-        <div class="d-flex align-items-center">
+      <!-- <section class="py-1 h-100 section_parallax" id="section_beef">
+        <div class="d-flex align-items-center element_parallax">
           <img
             src="assets/Hamburger-4.png"
             alt="img hamburger-4"
@@ -448,18 +628,18 @@
             seeds and give nutrients back into the soil and restarts the cycle.
           </p>
         </div>
-      </section>
+      </section> -->
 
-      <hr
+      <!-- <hr
         class="separator-sm"
         data-aos="slide-down"
         data-aos-duration="5200"
         data-aos-easing="ease-in-out-back"
         data-aos-anchor-placement="center-bottom"
-      />
+      /> -->
 
-      <section class="py-1" id="section_hamburguer">
-        <div class="d-flex align-items-center">
+      <!-- <section class="py-1 h-100 section_parallax" id="section_hamburguer">
+        <div class="d-flex align-items-center element_parallax">
           <img
             src="assets/Hamburger-5.png"
             alt="img hamburger-5"
@@ -476,7 +656,7 @@
             data-aos-easing="ease-in-out-back"
             data-aos-anchor-placement="center-bottom"
           >
-            CARBON NATURAL<br />
+            CARBON NEUTRAL<br />
             NEVER TASTED SO GOOD!
           </div>
           <p
@@ -485,10 +665,7 @@
             data-aos-easing="ease-in-out-back"
             data-aos-anchor-placement="center-bottom"
           >
-            Num sultures! Us, sentius, opubliciemum sedo, virmihi liquamq
-            uiusque cono. Ex non ia rei tessediem me peris horum tem
-            inatorisquam capervignat fati, nota, ute nisquo pultora etiquem ine
-            erfinatius aut virmil coendac hicaelus. Si publii simei tio
+          By eating a Molly D's Burger from Royal Ranch, you are helping the planet! So do your part, eat at Molly D's.
           </p>
           <img
             src="assets/Hamburger-6.png"
@@ -500,17 +677,17 @@
             data-aos-anchor-placement="center-bottom"
           />
         </div>
-      </section>
+      </section> -->
 
       <hr
-        class="separator"
+        class="separator snap-section"
         data-aos="slide-down"
         data-aos-duration="5200"
         data-aos-easing="ease-in-out-back"
         data-aos-anchor-placement="center-bottom"
       />
 
-      <section class="" id="section_how_it_works">
+      <section class="snap-section" id="section_how_it_works">
         <div class="d-flex align-items-center">
           <div
             class="img-container-25 border-circle border-md"
@@ -566,7 +743,8 @@
         data-aos-easing="ease-in-out-back"
         data-aos-anchor-placement="center-bottom"
       />
-
+</div>
+<div class="container-full d-flex justify-content-center text-center bg--blue-brown">
       <section class="h-100 text-light px-auto mx-none" id="section_into_soil">
         <div class="d-flex align-items-center div-section_into_soil">
           <div
@@ -576,16 +754,16 @@
             data-aos-easing="ease-in-out-back"
             data-aos-anchor-placement="center-bottom"
           >
-            CARBON OUT <br>
-            OF THE <br>
+            CARBON OUT <br />
+            OF THE <br />
             AIR
           </div>
 
-          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5">
-          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5">
-          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5">
-          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5">
-          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5">
+          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5" />
+          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5" />
+          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5" />
+          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5" />
+          <img src="./assets/arrow-blue.png" alt="arrow" class="img-5" />
 
           <div
             class="mt-2 p-bottom"
@@ -606,6 +784,9 @@
         data-aos-easing="ease-in-out-back"
         data-aos-anchor-placement="center-bottom"
       />
+      <!-- <div class="div-separator">
+        <div class="separador"></div>
+      </div> -->
 
       <section class="text-light" id="section_royal_family">
         <div class="d-flex align-items-center">
@@ -621,7 +802,7 @@
           </div>
           <div class="video-container">
             <video
-              src="assets/Royal Family Farming Video.mp4"
+              src="assets/mollyds_loop-540p.mp4"
               alt="video"
               autoplay
               muted
@@ -859,8 +1040,16 @@
             data-aos-duration="1000"
             data-aos-easing="ease-in-out-back"
           >
-            <img src="assets/follow-1.png" alt="img follow 1" class="img-responsive" />
-            <img src="assets/Austin_MOLLY.png" alt="img follow 2" class="img-100" />
+            <img
+              src="assets/follow-1.png"
+              alt="img follow 1"
+              class="img-responsive"
+            />
+            <img
+              src="assets/Austin_MOLLY.png"
+              alt="img follow 2"
+              class="img-100"
+            />
             <img src="assets/follow-3.png" alt="img follow 3" class="img-100" />
             <img src="assets/follow-4.png" alt="img follow 4" class="img-100" />
             <img src="assets/follow-6.png" alt="img follow 5" class="img-100" />
@@ -948,5 +1137,14 @@
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="plugins/aos/aos.js"></script>
     <script src="js/index.js"></script>
+    <!-- <script src="plugins/fullPage.js-msater/fullpage.extensions.min.js"></script>
+    <script src="plugins/fullPage.js-msater/fullpage.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new fullpage('#fullpage', {
+            // autoScrolling:true,
+            // scrollHorizontally: true
+        });
+    </script> -->
   </body>
 </html>
