@@ -82,6 +82,25 @@
 /* --------------------------------SCROLLBAR------------------------------------------ */
 
 
+
+/* Dark-mode */
+/* @media (prefers-color-scheme: dark) {
+   body {
+       background-color: black;
+       color: white;
+   }
+} */
+/* Light-mode */
+/* @media (prefers-color-scheme: light) {
+   body {
+       background-color: white;
+       color: black;
+   }
+} */
+
+
+
+
 body {
    /* background: rgb(110,108,79);
    background: linear-gradient(0deg, 

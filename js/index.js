@@ -31,6 +31,14 @@ window.onscroll = function () {
 //#endregion EFECTO PARALLAX
 
 
+//#region DETETCTAR DARK-MODE EN EL NAVEGADOR
+const favicon = document.querySelector("#favicon");
+let logo = "assets/crown_logo.png"
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) logo = "assets/crown_logo_white.png"
+favicon.href = logo;
+//#endregion DETETCTAR DARK-MODE EN EL NAVEGADOR
+
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
